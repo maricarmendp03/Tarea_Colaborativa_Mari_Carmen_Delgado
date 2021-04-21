@@ -6,9 +6,9 @@ Algoritmo Pago_con_descuento
 	Leer mes
 	
 	Si (mes="febrero") Entonces
-		Escribir "Debe pagar " (importe-0.15)
-		Descuento<- (importe/0.15)
-		Total<- (importe+Descuento)
+		Escribir "Debe pagar " (importe*0.15)
+		Descuento<- (importe*0.15)
+		Total<- (importe-Descuento)
 		Escribir "Debe pagar " Total "$"
 	SiNo
 		Escribir "Debe pagar " importe "$"
